@@ -7,3 +7,15 @@ AWS CloudFormation is a service provided by Amazon Web Services (AWS) that helps
 * **Automation and Consistency:** CloudFormation allows you to automate the deployment and management of your infrastructure. This helps maintain consistency across your environments (like development, testing, production) because you use the same template to create them all. If changes are needed, you modify the template, and CloudFormation handles the updates accordingly.
 * **Stacks:** When you deploy a CloudFormation template, it creates a 'stack.' A stack is a collection of AWS resources that are created and managed together as a single unit. You can create, update, or delete entire stacks and their associated resources in a controlled and organized manner.
 * **Change Management:** CloudFormation also helps in managing changes to your infrastructure. It keeps track of changes made to your resources and allows you to update your existing stacks with these changes without affecting the running applications.
+
+## Sample template for creating S3 bucket
+
+```
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties: 
+      BucketName: 'lovely-test-2'
+      VersioningConfiguration: 
+        Status: 'Enabled'
+```
