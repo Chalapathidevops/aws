@@ -10,6 +10,8 @@ AWS CloudFormation is a service provided by Amazon Web Services (AWS) that helps
 
 ## Sample template for creating S3 bucket
 
+Ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfiguration.html
+
 ```
 Resources:
   S3Bucket:
